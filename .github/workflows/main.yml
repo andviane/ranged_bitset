@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: situation1
+      run: |
+        pwd
+        ls
+    - name: mkdir_build
+      run: |
+        mkdir -p build
+    - name: cmake
+      run: |
+        cd build 
+        cmake ..
+    - name: make
+      run: |
+        cd build
+        ls
+        make
+    - name: run_tests
+      run:  |
+        cd build
+        if [ -x ./ranged_bitset_tests ]; then
+          ./ranged_bitset_tests
+        else
+          echo "Tests not built"
+        fi
+
