@@ -1,3 +1,5 @@
+![C/C++ CI](https://github.com/andviane/ranged_bitset/workflows/C/C++%20CI/badge.svg)
+
 # Ranged bitset implementation in C++
 
 This project provides a bitset that can work with ranges. This is something that does not come with STL bitset, yet it happened
