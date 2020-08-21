@@ -3,9 +3,9 @@
 #include <cstring>
 #include <cstdint>
 #include <cassert>
-#include "RangedBitSetConstants.h"
+#include "RangedBitSetConstants.hpp"
 
-namespace ranged_bitset {
+namespace andviane {
   template<unsigned int SIZE_BITS>
   class RangedBitset {
   public:

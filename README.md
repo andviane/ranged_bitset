@@ -8,6 +8,8 @@ Internally the set uses an array of uint64_t to store the values, one value per 
 The total size of the bitset is only limited by memory.
 
 ```  
+  using namespace andviane;
+
   // 16 bit bitset (size is template paramter)
   RangedBitset<16> a; 
 

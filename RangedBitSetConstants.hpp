@@ -1,4 +1,4 @@
-namespace ranged_bitset {
+namespace andviane {
   static const uint64_t ones = 0xFFFFFFFFFFFFFFFF;
   static const uint64_t zeros = 0x0;
 

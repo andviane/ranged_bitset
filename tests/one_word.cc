@@ -1,10 +1,10 @@
 #include "gtest/gtest.h"
 
 #include <string>
-#include "../RangedBitset.h"
+#include "../RangedBitset.hpp"
 
 using std::string;
-using namespace ranged_bitset;
+using namespace andviane;
 
 // Set tests restricted to the single word
 const int size = 64;
